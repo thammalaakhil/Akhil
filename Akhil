@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Akhil - Web Developer</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+body{background:#0f0f0f;color:white;text-align:center;font-family:Arial;padding:40px 15px}
+h1{font-size:32px}
+h1 span{color:#00ff88}
+#typing{color:#00ff88;font-size:22px;font-weight:bold;min-height:30px}
+.box{background:#1a1a1a;padding:20px;border-radius:15px;margin-top:20px}
+a{color:#00ff88;text-decoration:none;font-weight:bold}
+button{background:#00ff88;border:none;padding:12px 25px;border-radius:25px;font-weight:bold;font-size:16px}
+</style>
+</head>
+<body>
+<h1>Hi I'm <span>AKHIL</span></h1>
+<div id="typing"></div>
+<div class="box">
+<p>I'm a Professional Web Developer.</p>
+<p>My Main Goal to help & Satisfied the Local & Global Clients by Web development solutions.</p>
+<p>100 Days 100 Projects - Day 2</p>
+<br>
+<button>Contact Me</button>
+<br><br>
+<a href="https://github.com/thammalaakhil/Akhil">My GitHub</a>
+</div>
+<script>
+var texts=["Web Developer","UI Designer","Freelancer"];
+var i=0,j=0,cur="";function type(){if(j<texts[i].length){cur+=texts[i][j];j++;document.getElementById("typing").innerHTML=cur;setTimeout(type,100)}else{setTimeout(()=>{i=(i+1)%texts.length;j=0;cur="";type()},1200)}}type();
+</script>
+</body>
+</html>
